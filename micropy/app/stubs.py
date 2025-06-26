@@ -189,7 +189,7 @@ def stubs_create(
             tmpdir,
             verify_integrity=True,
             # exclude due to ps1 var possibly different.
-            exclude_integrity={"sys.py", "usys.py"},
+            exclude_integrity={"sys.pyi", "usys.pyi"},
         )
         out_dir = Path(tmpdir)
         stub_path = next(out_dir.iterdir())
