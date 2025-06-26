@@ -590,7 +590,7 @@ class FirmwareStub(Stub):
 
         self.frozen = self.path / "frozen"
         self.repo = self.info.get("repo")
-        firmware = self.info.get("firmware").strip()
+        firmware = self.info.get("firmware")["build"].strip()
         self.firmware = firmware.replace(" ", "-")
 
     @property
