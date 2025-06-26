@@ -357,7 +357,7 @@ class StubManager:
         mod_data = json.load(mod_file.open())
         dev_fware = mod_data["firmware"]
         fname = dev_fware.get("name", None)
-        out_name = f"{dev_fware['sysname']}"
+        out_name = f"{dev_fware['port']}"
         # TODO: Attempt to Autoresolve Firmware name and add it to info.json
         if fname:
             out_name = f"{out_name}-{fname}"
