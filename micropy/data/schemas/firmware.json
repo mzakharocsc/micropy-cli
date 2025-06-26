@@ -1,12 +1,8 @@
 {
     "type": "object",
     "required": [
-        "name",
-        "repo",
         "firmware",
-        "modules",
-        "devices",
-        "versions"
+        "modules"
     ],
     "properties": {
         "scope": {
@@ -22,7 +18,7 @@
             "type": ["string", "array"]
         },
         "firmware": {
-            "type": "string"
+            "type": "object"
         },
         "excluded_modules": {
             "type": "array",
@@ -33,7 +29,7 @@
         "modules": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "object"
             }
         },
         "devices": {
